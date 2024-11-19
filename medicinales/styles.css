@@ -1,0 +1,564 @@
+/* Reset global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #bd1414;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.phone-number {
+    color: white;
+    font-size: 0.9em;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+/* Container to center the content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Product box styling */
+.product {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.product-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.product-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.product-info .price {
+    font-size: 1.2em;
+    color: #af4c57;
+}
+
+/* Button Styling */
+button {
+    background-color: #bd1414;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #bd1414;
+}
+
+/* Cart section */
+.cart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-items p {
+    margin: 5px 0;
+}
+
+.total {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+}
+/* Intro Video Section */
+.intro-video {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.intro-video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-description {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1.1em;
+}
+.intro-video iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cart-items {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.pay-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-button:hover {
+    background-color: #45a049;
+}
+/* Icono del carrito */
+.cart-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.cart-icon-image {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos para el carrito */
+.cart-items {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.total {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.pay-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para Yape */
+.yape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.yape-image {
+    width: 150px;
+    height: auto;
+}
+/* Encabezado del carrito con icono */
+.cart-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.cart-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.cart-header-icon {
+    width: 30px;
+    height: 30px;
+}
+/* Estilos para el modal */
+.recipe-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recipe-details {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+/* Botones generales */
+button {
+    padding: 10px 15px; /* Tamaño cómodo */
+    font-size: 14px; /* Texto más pequeño */
+    color: #ffffff; /* Texto blanco */
+    background-color: #4CAF50; /* Verde agradable */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    margin: 5px 0; /* Separación entre botones */
+}
+
+/* Hover para los botones */
+button:hover {
+    background-color: #45a049; /* Cambio de color en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento ligero */
+}
+
+/* Botón "Agregar al carrito" */
+button:first-of-type {
+    background-color: #2196F3; /* Azul para diferenciar */
+}
+
+button:first-of-type:hover {
+    background-color: #1976D2; /* Azul más oscuro en hover */
+}
+
+/* Botón "Ver receta" */
+button:last-of-type {
+    background-color: #FF5722; /* Naranja para diferenciar */
+}
+
+button:last-of-type:hover {
+    background-color: #E64A19; /* Naranja más oscuro en hover */
+}
+
+/* Estilo para contenedor de botones */
+.product .product-info {
+    display: flex;
+    flex-direction: column; /* Botones uno debajo del otro */
+    align-items: center; /* Centrar los botones */
+    gap: 10px; /* Espacio entre botones */
+}
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Contenedor principal */
+    .container {
+        display: flex;
+        flex-direction: column; /* Elementos apilados en columna */
+        align-items: center; /* Centrar los elementos */
+        gap: 20px; /* Espaciado entre productos */
+    }
+
+    /* Productos */
+    .product {
+        width: 90%; /* Producto ocupa el 90% del ancho de la pantalla */
+        max-width: 350px; /* Limitar el tamaño máximo para mantener proporción */
+        margin: 0 auto; /* Centrar */
+        text-align: center; /* Centrar texto */
+        padding: 10px; /* Añadir espacio interno */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Mejor estética */
+        border-radius: 8px; /* Bordes redondeados */
+        background-color: #fff; /* Fondo limpio */
+    }
+
+    /* Imágenes de productos */
+    .product img {
+        width: 100%; /* Imagen ocupa el ancho del contenedor */
+        height: auto; /* Mantiene proporción */
+        border-radius: 8px; /* Bordes redondeados */
+    }
+
+    /* Botones */
+    .product button {
+        width: 100%; /* Botones ocupan el ancho del contenedor */
+        font-size: 16px; /* Tamaño accesible */
+        margin-top: 10px; /* Espacio entre botones */
+        padding: 10px; /* Espaciado interno */
+        border: none; /* Quitar bordes */
+        border-radius: 4px; /* Bordes suaves */
+        background-color: #28a745; /* Color destacado */
+        color: white; /* Texto blanco */
+        cursor: pointer; /* Cursor de acción */
+    }
+
+    .product button:hover {
+        background-color: #218838; /* Efecto hover */
+    }
+
+    /* Video de introducción */
+    .intro-video iframe {
+        width: 90%; /* Video se adapta al ancho del dispositivo */
+        max-width: 500px; /* Limitar el tamaño máximo */
+        height: auto; /* Ajustar proporciones */
+        margin: 0 auto;
+        display: block;
+    }
+
+    .video-description {
+        font-size: 14px; /* Texto más pequeño */
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Redes sociales */
+    .social-media {
+        display: flex;
+        flex-direction: row; /* Íconos en fila */
+        justify-content: center; /* Centrar íconos */
+        gap: 15px; /* Espaciado entre íconos */
+    }
+
+    .social-icon {
+        width: 30px; /* Tamaño pequeño */
+        height: 30px;
+    }
+
+    /* Carrito */
+    .cart {
+        width: 90%; /* Ocupa la mayor parte del ancho */
+        max-width: 400px; /* Limitar tamaño máximo */
+        margin: 20px auto; /* Centrar */
+        padding: 10px;
+        border: 1px solid #ddd; /* Añadir borde */
+        border-radius: 8px;
+        background-color: #f9f9f9; /* Fondo claro */
+    }
+
+    .cart-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cart-items {
+        margin: 10px 0;
+    }
+
+    .pay-button {
+        width: 100%; /* Botón ancho */
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .pay-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Imagen de Yape */
+    .yape-image {
+        width: 60%;
+        max-width: 200px; /* Limitar tamaño máximo */
+        margin: 10px auto;
+        display: block;
+    }
+
+    .yape p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para pantallas más pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px; /* Título más pequeño */
+    }
+
+    .product h3 {
+        font-size: 14px; /* Texto de título más pequeño */
+    }
+
+    .price {
+        font-size: 12px; /* Precio compacto */
+    }
+
+    .product-info p {
+        font-size: 12px; /* Descripciones más pequeñas */
+    }
+
+    button {
+        font-size: 14px; /* Texto compacto */
+        padding: 8px 10px; /* Botones más pequeños */
+    }
+}
+/* Imágenes de productos */
+.product img {
+    width: 100%; /* Imagen ocupa el ancho del contenedor */
+    height: auto; /* Mantiene proporción */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    border-radius: 8px; /* Bordes redondeados para estilo */
+}
+
+/* Contenedor de productos */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto; /* Centrar el producto */
+    padding: 10px;
+    max-width: 300px; /* Limita el ancho para mantener uniformidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo limpio */
+}
+
+/* Botones */
+.product button {
+    width: 90%; /* Botones más compactos */
+    margin: 5px 0; /* Espaciado entre botones */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta el contenido para adaptarse */
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espaciado entre productos */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .product {
+        width: 90%; /* Producto ocupa casi todo el ancho de la pantalla */
+    }
+
+    .product img {
+        max-width: 100%; /* Asegura que las imágenes no desborden */
+    }
+}

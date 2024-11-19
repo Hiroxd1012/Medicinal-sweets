@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinal sweets</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazamos el archivo CSS -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Medicinal sweets</h1>
+            <div class="social-media">
+                <a href="https://www.facebook.com/share/tDyEDYQd8qJTfrDC/?mibextid=qi2Omg" target="_blank">
+                    <img src="imagenes/facebook-removebg-preview.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.tiktok.com/@favifavian89?_t=8rVfF93PEIS&_r=1" target="_blank">
+                    <img src="imagenes/images-removebg-preview.png" alt="TikTok" class="social-icon">
+                </a>
+                <a href="tel:+51 918 698 380">
+                    <img src="imagenes/whatsapp-removebg-preview.png" alt="Teléfono" class="social-icon">
+                    <span class="phone-number">+51 918 698 380</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+
+<div class="intro-video">
+    <iframe 
+        width="100%" 
+        height="315" 
+        src="https://www.youtube.com/embed/CcnG_4DoErY" 
+        title="Video de introducción" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <p class="video-description">Conoce más sobre nuestros productos medicinales y sus beneficios.</p>
+</div>
+
+
+<div class="container">
+    <div class="product">
+        <img src="imagenes/Caramelos de Miel y Limón.png" alt="Caramelos de Miel y Limón">
+        <div class="product-info">
+            <h3>Caramelos de Miel y Limón</h3>
+            <p>Caramelos naturales que combinan miel y limón para calmar la irritación de la garganta y aliviar la tos. También aportan un toque de energía rápida.</p>
+            <p class="price">$2.00 (bolsa con 10 caramelos).</p>
+        </div>
+        <button onclick="addToCart('Caramelos de Miel y Limón', 2, 'imagenes/Caramelos de Miel y Limón.png')">Agregar al carrito</button>
+        <button onclick="showRecipe('miel-limon')">Ver receta</button>
+    </div>
+    
+    <div class="product">
+        <img src="imagenes/Eucalipto Mentol(Descongestionante).webp" alt="Eucalipto Mentol(Descongestionante)">
+        <div class="product-info">
+            <h3>Eucalipto Mentol(Descongestionante)</h3>
+            <p>Caramelos con extracto de eucalipto, menta y mentol, ideales para despejar las vías respiratorias y aliviar los síntomas del resfriado.</p>
+            <p class="price">$2.50 (bolsa con 12 unidades).</p>
+        </div>
+        <button onclick="addToCart('Eucalipto Mentol(Descongestionante)', 2, 'imagenes/Eucalipto Mentol(Descongestionante).webp')">Agregar al carrito</button>
+        <button onclick="showRecipe('eucalipto-mentol')">Ver receta</button>
+    </div>
+    
+    <div class="product">
+        <img src="imagenes/Gomitas de Vitamina C.jpg" alt="Gomitas de Vitamina C (Refuerzo Inmunológico)">
+        <div class="product-info">
+            <h3>Gomitas de Vitamina C (Refuerzo Inmunológico)</h3>
+            <p>Gomitas sabor naranja enriquecidas con vitamina C, perfectas para reforzar el sistema inmunológico y combatir el cansancio.</p>
+            <p class="price">$5.00 (frasco con 30 gomitas).</p>
+        </div>
+        <button onclick="addToCart('Gomitas de Vitamina C (Refuerzo Inmunológico)', 2, 'imagenes/Gomitas de Vitamina C.jpg')">Agregar al carrito</button>
+        <button onclick="showRecipe('vitamina-c')">Ver receta</button>
+    </div>
+    
+    <div class="product">
+        <img src="imagenes/Caramelos de Jengibre y Miel.webp" alt="Caramelos de Jengibre y Miel (Digestivo y Anti-inflamatorio)">
+        <div class="product-info">
+            <h3>Caramelos de Jengibre y Miel (Digestivo y Anti-inflamatorio)</h3>
+            <p>Dulces que combinan jengibre natural y miel para aliviar problemas digestivos, reducir inflamaciones y calmar la garganta.</p>
+            <p class="price">$3.50 (bolsa con 15 caramelos).</p>
+        </div>
+        <button onclick="addToCart('Caramelos de Jengibre y Miel (Digestivo y Anti-inflamatorio)', 2, 'imagenes/Caramelos de Jengibre y Miel.webp')">Agregar al carrito</button>
+        <button onclick="showRecipe('jengibre-miel')">Ver receta</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes/Pastillas de Regaliz.jpg" alt="Pastillas de Regaliz (Calmante y Digestivo)">
+        <div class="product-info">
+            <h3>Caramelos de Regaliz (Calmante y Digestivo)</h3>
+            <p>Caramelos de regaliz que ayudan a calmar el estómago, combatir el estrés y reducir la irritación de la garganta.</p>
+            <p class="price">$3.00 (caja con 10 caramelos).</p>
+        </div>
+        <button onclick="addToCart('Pastillas de Regaliz (Calmante y Digestivo)', 2, 'imagenes/Pastillas de Regaliz.jpg')">Agregar al carrito</button>
+        <button onclick="showRecipe('regaliz')">Ver receta</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes/Gomitas de Melatonina.webp" alt="Gomitas de Melatonina (Relajación y Sueño)">
+        <div class="product-info">
+            <h3>Gomitas de Melatonina (Relajación y Sueño)</h3>
+            <p>Gomitas con sabor a fresa que contienen melatonina para ayudar a relajarte y mejorar la calidad del sueño.</p>
+            <p class="price">$8.00 (frasco con 60 gomitas).</p>
+        </div>
+        <button onclick="addToCart('Gomitas de Melatonina (Relajación y Sueño)', 2, 'imagenes/Gomitas de Melatonina.webp')">Agregar al carrito</button>
+        <button onclick="showRecipe('melatonina')">Ver receta</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes/Caramelos de Propóleo.jpg" alt="Caramelos de Propóleo (Inmunoestimulante)">
+        <div class="product-info">
+            <h3>Caramelos de Propóleo (Inmunoestimulante)</h3>
+            <p>Caramelos naturales con propóleo y miel, conocidos por fortalecer el sistema inmunológico y aliviar la garganta irritada.</p>
+            <p class="price">$4.00 (bolsa con 20 caramelos).</p>
+        </div>
+        <button onclick="addToCart('Caramelos de Propóleo (Inmunoestimulante)', 2, 'imagenes/Caramelos de Propóleo.jpg')">Agregar al carrito</button>
+        <button onclick="showRecipe('propoleo')">Ver receta</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes/Chicles de Nicotina.jpg" alt="Chicles de Nicotina (Dejar de Fumar)">
+        <div class="product-info">
+            <h3>Chicles de Nicotina (Dejar de Fumar)</h3>
+            <p>Chicles medicinales diseñados para ayudar a reducir la ansiedad por la nicotina, disponibles en sabores como menta y canela.</p>
+            <p class="price">$10.00 (caja con 20 chicles).</p>
+        </div>
+        <button onclick="addToCart('Chicles de Nicotina (Dejar de Fumar)', 2, 'imagenes/Chicles de Nicotina.jpg')">Agregar al carrito</button>
+        <button onclick="showRecipe('nicotina')">Ver receta</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes/Gomitas Multivitamínicas.jpg" alt="Gomitas Multivitamínicas (Energía y Salud General)">
+        <div class="product-info">
+            <h3>Gomitas Multivitamínicas (Energía y Salud General)</h3>
+            <p>Gomitas en sabores mixtos que contienen vitaminas A, B, C, D y E, junto con minerales esenciales para el bienestar general.</p>
+            <p class="price">$6.00 (frasco con 30 gomitas).</p>
+        </div>
+        <button onclick="addToCart('Gomitas Multivitamínicas (Energía y Salud General)', 2, 'imagenes/Gomitas Multivitamínicas.jpg')">Agregar al carrito</button>
+        <button onclick="showRecipe('multivitaminicas')">Ver receta</button>
+    </div>
+
+    <div class="product">
+        <img src="imagenes/Caramelos de Alcaçuz y Mento.png" alt="Gomitas de Vitamina C (Refuerzo Inmunológico)">
+        <div class="product-info">
+            <h3>Caramelos de Alcaçuz y Mentol (Resfriados)</h3>
+            <p>Caramelos herbales que combinan alcaçuz (raíz de regaliz) con mentol, útiles para aliviar los síntomas del resfriado y calmar la garganta.</p>
+            <p class="price">$3.50 (bolsa con 15 caramelos).</p>
+        </div>
+        <button onclick="addToCart('Gomitas de Vitamina C (Refuerzo Inmunológico)', 2, 'imagenes/Caramelos de Alcaçuz y Mento.png')">Agregar al carrito</button>
+        <button onclick="showRecipe('alacazuz-mentol')">Ver receta</button>
+    </div>
+    <div id="recipe-modal" class="recipe-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="recipe-image" src="" alt="Receta" class="recipe-image">
+            <div id="recipe-details" class="recipe-details"></div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <img src="imagenes/carrito.png" alt="Carrito de Compras" class="cart-header-icon">
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Los productos agregados aparecerán aquí -->
+        </div>
+        <div class="total">
+            Total: $<span id="total">0.00</span>
+        </div>
+        <button class="pay-button" onclick="pay()">Pagar</button>
+        <div class="yape">
+            <img src="imagenes/yape (2).jpeg" alt="Pagar con Yape" class="yape-image">
+            <p>Escanea para pagar con Yape</p>
+        </div>
+    </div>    
+</div>
+
+<script src="script.js"></script> <!-- Enlazamos el archivo JavaScript -->
+</body>
+</html>
+
